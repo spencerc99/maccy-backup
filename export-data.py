@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sqlite3
 from datetime import datetime
 import os
@@ -20,12 +21,17 @@ CONTENT_TYPES_TO_IGNORE = [
 ]
 
 def main():
+    # Setup sqlite connection to the database
+    conn = sqlite3.connect(filepath, detect_types=sqlite3.PARSE_DECLTYPES |
+                                                            sqlite3.PARSE_COLNAMES)
+    cur = conn.cursor()
+
+    # Try to get last id we exported
     last_id = None
     try: 
         with open('last-export', 'r') as last_export:
             last_id = int(last_export.readline().strip())
     except Exception as e:
-        print(e)
         pass
 
     print(f"Looking for entries to export starting after {last_id}...")

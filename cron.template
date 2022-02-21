@@ -1,0 +1,1 @@
+<minute> <hour> * * *  cd <path/to/this/project> && python export-data.py >> cronjob.log 2>&1
