@@ -1,5 +1,5 @@
 # Maccy Backup
-This project is intended to provide an easy way to automatically back up your [Maccy](https://maccy.app/) database of copy + pastes. 
+This project is intended to provide an easy way to automatically back up your [Maccy](https://maccy.app/) database of copy + pastes. It produces a CSV of the clipboard data from Maccy and supports regular exporting of this data to view your clipboard history over time. You can see a sample CSV export in `example-export.csv`
 
 # Context
 Maccy is an incredibly useful app that keeps track of recent clipboard history, but by default it keeps the last 200 entries. You can raise this limit arbitrarily high because it is open-source (❤️), but you probably don't want to surface all of these when searching in your daily use of Maccy given how noisy the data is. Most copy and paste data naturally should be ephemeral and the beauty of Maccy is giving you access and control over the recent entries.
@@ -40,6 +40,9 @@ NOTE: cron jobs are unfortunately brittle and will not run if your computer is n
 
 1. setup cron job to auto-backup every X (like roam export)
 2. make sure can upload to github
+
+# Functionality Details
+This assumes a standard Mac setup with Maccy and also ignores any image content (but this ignore list is probably incomplete) to focus on preserving a history of text data to be lightweight.
 
 # Final Notes
 

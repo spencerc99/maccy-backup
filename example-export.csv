@@ -1,0 +1,6 @@
+2022-02-20,12850,public.utf8-plain-text,b'            # date,id,type,value\n            # 2021-02-20 00:00:00,123,public.utf8-plain-text,hello world copy paste content, with commas too!'
+2022-02-20,12852,public.utf8-plain-text,b'2021-02-20 00:00:00,123,public.utf8-plain-text,hello world copy paste content, with commas too!\n'
+2022-02-20,12853,public.url,b'https://github.com/p0deje/Maccy/issues/375'
+2022-02-20,12856,public.utf8-plain-text,b'#!/usr/bin/python3'
+2022-02-20,12857,public.html,b'<meta charset=\'utf-8\'><div style="color: #ffffff;background-color: #343d46;font-family: \'JetBrains Mono\', \'Fira Code\', \'Consolas Ligaturized Regular\', MonoLisa, \'Fira Code\', Menlo, Monaco, Menlo, Monaco, \'Courier New\', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #ffffff;">#!/usr/bin/python3</span></div></div>'
+2022-02-20,12859,public.utf8-plain-text,b'https://github.com/spencerc99/maccy-backup'
