@@ -32,12 +32,15 @@ For example, a sample row might look like:
 At this point, you could stop if you want to manually maintain this export or just do a one-time export.
 
 ## Automated Export
-To make it automated, I've provided a simple cron job template for you to use under `cronjob.template`. Create a new file called `cronjob` and fill the template in.
+To make it automated, I've provided a simple cron job template for you to use under `cronjob.template` which runs this script every 10 minutes. Create a new file called `cronjob` and fill the template in. You can test the logic of your cronjob using this site https://crontab.guru/. 
+
+If you're on Mac, I ran into folder permissioning issues, which you'll need to resolve by following [this thread](https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted).
 
 After that, you can run `install-cronjob.sh` in order to add it to your list of cron jobs.
 
 NOTE: cron jobs are unfortunately brittle and will not run if your computer is not open and on at the time specified. 
 
+TODO:
 1. setup cron job to auto-backup every X (like roam export)
 2. make sure can upload to github
 
