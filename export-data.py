@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/Users/spencerchang/anaconda/bin/python3
+# NOTE: you should make the above path wherever your python3 is
 import sqlite3
 from datetime import datetime
 import os

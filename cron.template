@@ -1,1 +1,1 @@
-*/10 * * * *  cd <path/to/this/project> && python export-data.py >> cronjob.log 2>&1
+*/10 * * * *  cd <path/to/this/project> && python3 export-data.py >> cronjob.log 2>&1

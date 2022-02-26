@@ -36,7 +36,7 @@ To make it automated, I've provided a simple cron job template for you to use un
 
 If you're on Mac, I ran into folder permissioning issues, which you'll need to resolve by following [this thread](https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted).
 
-After that, you can run `install-cronjob.sh` in order to add it to your list of cron jobs.
+After that, you can run `install-cronjob.sh` in order to add it to your list of cron jobs. Finally, you'll need to go to `export-data.py` and change the top line to wherever your python3 path is.
 
 NOTE: cron jobs are unfortunately brittle and will not run if your computer is not open and on at the time specified. 
 
